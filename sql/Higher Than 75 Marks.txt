@@ -1,0 +1,1 @@
+select name from students where marks>75 ORDER BY substring(name,-3),ID;
