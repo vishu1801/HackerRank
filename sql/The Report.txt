@@ -1,0 +1,7 @@
+select 
+CASE
+    WHEN GRADES.GRADE >= 8 THEN STUDENTS.NAME
+    WHEN GRADES.GRADE < 8 THEN NULL
+  END AS NAME,grades.grade,marks from students,grades
+where marks>=grades.min_mark AND marks<=max_mark
+order BY grades.grade DESC, students.name ASC, students.marks ASC
