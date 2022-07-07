@@ -1,0 +1,1 @@
+select city.name from city INNER JOIN country ON city.countrycode = country.code where country.continent="Africa";
