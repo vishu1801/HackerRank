@@ -1,0 +1,33 @@
+
+
+
+
+    /*
+     * Complete the 'reversePrint' function below.
+     *
+     * The function accepts INTEGER_SINGLY_LINKED_LIST llist as parameter.
+     */
+
+    /*
+     * For your reference:
+     *
+     * SinglyLinkedListNode {
+     *     int data;
+     *     SinglyLinkedListNode next;
+     * }
+     *
+     */
+
+    public static void reversePrint(SinglyLinkedListNode llist) {
+    // Write your code here
+        if(llist.next == null){
+        System.out.println(llist.data);
+    }else{
+        reversePrint(llist.next);
+        System.out.println(llist.data);
+    }
+
+    }
+
+
+
